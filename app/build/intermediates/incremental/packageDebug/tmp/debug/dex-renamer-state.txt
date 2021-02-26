@@ -1,0 +1,4 @@
+#Fri Feb 26 15:16:34 EST 2021
+base.0=C\:\\Users\\nahmed\\Downloads\\BLEScanningSample-master\\BLEScanningSample-master\\app\\build\\intermediates\\dex\\debug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
