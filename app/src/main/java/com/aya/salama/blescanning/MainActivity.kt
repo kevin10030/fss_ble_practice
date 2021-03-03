@@ -3,14 +3,15 @@ package com.aya.salama.blescanning
 import android.Manifest
 import android.bluetooth.*
 import android.bluetooth.le.ScanCallback
+import android.bluetooth.le.ScanFilter
 import android.bluetooth.le.ScanResult
+import android.bluetooth.le.ScanSettings
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
-import android.os.HandlerThread
 import android.util.Log
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
@@ -87,7 +88,35 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
+
+    private fun getFilters(): MutableList<ScanFilter> {
+
+        //A5:12:B9:00:F7:84
+
+        val scanFilters: MutableList<ScanFilter> =
+                ArrayList()
+        val scanFilter = ScanFilter.Builder().setDeviceAddress("A5:12:B9:00:F7:84").build()
+        scanFilters.add(scanFilter)
+        return scanFilters
+    }
+
+
+    private val scanSettings = ScanSettings.Builder()
+            .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
+            .build()
+
     private fun scanLeDevice(enable: Boolean) {
+
+
+
+
+
+
+
+
+
+
         when (enable) {
             true -> {
                 // Stops scanning after a pre-defined scan period.
@@ -96,7 +125,7 @@ class MainActivity : AppCompatActivity() {
                     bluetoothAdapter?.bluetoothLeScanner?.stopScan(mLeScanCallback)
                 }, 5000)
                 mScanning = true
-                bluetoothAdapter?.bluetoothLeScanner?.startScan(mLeScanCallback)
+                bluetoothAdapter?.bluetoothLeScanner?.startScan(getFilters(),scanSettings, mLeScanCallback)
             }
             else -> {
                 mScanning = false
