@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BlePairing</string>
+    <string name="scan_stop">Scan/Stop</string>
+
+    <string name="unpair">UNPAIR</string>
+    <string name="pair">PAIR</string>
+    <string name="unknown_device">UNKNOWN DEVICE</string>
+    <string name="unpaired">Unpaired</string>
+    <string name="device_unpaired_successfully">Device Unpaired Successfully</string>
+
+    <string name="data_not_available">N/A</string>
+    <string name="request_pairing_connector_title">Bluetooth pairing request</string>
+    <string name="request_pairing_connector_prompt">Enter PIN to pair the device:</string>
+    <string name="request_pairing_connector_hint">PIN</string>
+    <string name="request_pairing_connector_option">Remember for this device</string>
+    <string name="button_apply">Apply</string>
+    <string name="button_cancel">Cancel</string>
+
+
+</resources>

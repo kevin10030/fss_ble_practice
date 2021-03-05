@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/common_blue"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Back"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp"
+            android:onClick="onClick"/>
+
+        <TextView
+            android:id="@+id/txt_menuBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/app_name"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/btFast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/common_blue"
+                android:textColor="#fff"
+                android:text="fast"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btSlow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/common_blue"
+                android:textColor="#fff"
+                android:text="slow"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/common_blue"
+                android:textColor="#fff"
+                android:text="on"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btOff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:background="@color/common_blue"
+                android:textColor="#fff"
+                android:text="off"
+                android:textSize="30sp"
+                android:textAllCaps="false"
+                android:onClick="onClick"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

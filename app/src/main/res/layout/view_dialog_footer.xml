@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_line_height"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:background="@drawable/separator_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnApply"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin_tiny"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_tiny"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin_tiny"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_tiny"
+            android:layout_alignParentRight="true"
+            android:text="@string/button_apply"
+            android:textAllCaps="true"
+            android:textColor="@android:color/primary_text_dark"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin_tiny"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin_tiny"
+            android:text="@string/button_cancel"
+            android:textAllCaps="true"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_toLeftOf="@+id/btnApply" />
+
+    </RelativeLayout>
+
+</LinearLayout>

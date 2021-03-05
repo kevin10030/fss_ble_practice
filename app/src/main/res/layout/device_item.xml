@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Device"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:gravity="center_vertical"/>
+
+    <Button
+        android:id="@+id/btnPair"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="@string/pair"
+        android:background="@color/common_blue"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>

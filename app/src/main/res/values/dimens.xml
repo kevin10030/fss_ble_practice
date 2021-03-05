@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin_small">8dp</dimen>
+    <dimen name="activity_vertical_margin_small">8dp</dimen>
+
+    <dimen name="activity_horizontal_margin_tiny">4dp</dimen>
+    <dimen name="activity_vertical_margin_tiny">4dp</dimen>
+
+    <dimen name="bottom_line_height">1dp</dimen>
+
+
+    <dimen name="dialog_contents_width_medium">304dp</dimen>
+
+    <dimen name="dialog_contents_height_xxxlarge">296dp</dimen> // approx. 8 radioButtons
+    <dimen name="dialog_contents_height_xxlarge">260dp</dimen>  // approx. 7 radioButtons
+    <dimen name="dialog_contents_height_xlarge">224dp</dimen>   // approx. 6 radioButtons
+    <dimen name="dialog_contents_height_large">188dp</dimen>    // approx. 5 radioButtons
+    <dimen name="dialog_contents_height_medium">152dp</dimen>   // approx. 4 radioButtons or manual (default)
+    <dimen name="dialog_contents_height_small">116dp</dimen>    // approx. 3 radioButtons
+    <dimen name="dialog_contents_height_tiny">80dp</dimen>      // approx. 2 radioButtons
+</resources>

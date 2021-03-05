@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#007eff</color>
+    <color name="colorPrimaryDark">#005fbf</color>
+    <color name="colorAccent">#007eff</color>
+
+    <color name="common_blue">#149dd8</color>
+
+    <color name="btn_pair">#a8a8a8</color>
+    <color name="btn_unpair">#ff6d00</color>
+
+    <color name="battery_status1">#b4e623</color>
+    <color name="battery_status2">#f11c2e</color>
+    <color name="battery_status3">#f9f108</color>
+
+    <color name="connected_device_count">#b4e623</color>
+
+    <color name="button_pressed">#80000000</color>
+</resources>
