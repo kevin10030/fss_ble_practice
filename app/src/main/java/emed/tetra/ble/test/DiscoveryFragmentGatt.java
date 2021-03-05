@@ -80,7 +80,7 @@ public class DiscoveryFragmentGatt extends Fragment {
             if (getActivity().checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, PERMISSION_REQUEST_COARSE_LOCATION);
             } else {
-
+                Toast.makeText(getActivity(), "coarse location permission granted", Toast.LENGTH_SHORT).show();
             }
         }catch (Exception e){}
 
@@ -120,7 +120,9 @@ public class DiscoveryFragmentGatt extends Fragment {
             case PERMISSION_REQUEST_COARSE_LOCATION: {
                 if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     System.out.println("coarse location permission granted");
+                    Toast.makeText(getActivity(), "coarse location permission granted", Toast.LENGTH_SHORT).show();
                 } else {
+                    Toast.makeText(getActivity(), "coarse location permission is not granted", Toast.LENGTH_SHORT).show();
                 }
                 return;
             }
@@ -428,6 +430,7 @@ public class DiscoveryFragmentGatt extends Fragment {
     }
 
     public void performBleCheck() {
+
         if (!checkBluetoothAvailability()) {
             Toast.makeText(getActivity(), "Please turn bluetooth on. Bluetooth is not available", Toast.LENGTH_SHORT).show();
             return;
